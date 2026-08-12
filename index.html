@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveIt - Moving Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">MoveIt</div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html">Quote</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="moving-box box1">
+        <div class="label">⚠️</div>
+        <div class="fragile">Fragile</div>
+    </div>
+    <div class="moving-box box2">
+        <div class="label">📦</div>
+    </div>
+    <div class="moving-box box3">
+        <div class="label">⚠️</div>
+        <div class="fragile">Handle Care</div>
+    </div>
+
+    <div class="truck">
+        <div class="truck-body"></div>
+        <div class="truck-cabin"></div>
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+    </div>
+
+    <div class="mover">
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="arm left-arm"></div>
+        <div class="arm right-arm"></div>
+        <div class="leg left-leg"></div>
+        <div class="leg right-leg"></div>
+    </div>
+
+    <div class="hero-content">
+        <h1>We Move<br><span>Your World</span></h1>
+        <p>Fast, secure and reliable moving service with animated modern design. Move your home and office stress free.</p>
+        <a href="quote.html" class="btn">Get Started</a>
+    </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services" id="services">
+
+    <div class="service-grid" id="serviceGrid">
+        <!-- Services will be loaded from API -->
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" id="contactName" placeholder="Your Name" required>
+        <input type="email" id="contactEmail" placeholder="Your Email" required>
+        <input type="tel" id="contactPhone" placeholder="Phone Number">
+        <textarea id="contactMessage" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <div id="formFeedback" class="feedback"></div>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>MoveIt</h3>
+            <p>Your trusted moving partner since 2020</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="quote.html">Quote</a>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📞 (555) 123-4567</p>
+            <p>📧 info@moveit.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 MoveIt Moving Company. All rights reserved.
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

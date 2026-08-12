@@ -1,0 +1,189 @@
+/* =========================
+   SERVICES PAGE SPECIFIC
+========================= */
+
+/* Hero Section */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 140px 10% 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 1.1;
+}
+
+.hero span {
+    color: #ffcc00;
+}
+
+.hero p {
+    margin-top: 25px;
+    font-size: 20px;
+    opacity: 0.85;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Services Section */
+.services-detailed {
+    padding: 100px 10%;
+    background: rgba(12, 22, 41, 0.5);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-title h2 {
+    font-size: 55px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 40px 30px;
+    transition: 0.4s;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 204, 0, 0.2);
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    opacity: 0.85;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.service-features li {
+    padding: 8px 0;
+    opacity: 0.8;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+/* CTA Section */
+.cta {
+    padding: 100px 10%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.cta-box {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 60px 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.cta h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    opacity: 0.85;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 40px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .section-title h2,
+    .cta h2 {
+        font-size: 38px;
+    }
+    
+    .hero p {
+        font-size: 17px;
+    }
+    
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .cta-box {
+        padding: 30px 20px;
+    }
+}

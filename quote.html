@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveIt - Get a Quote</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quote.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">MoveIt</div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html" class="active">Quote</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Moving Quote Calculator</h1>
+    <p class="subtitle">Get an instant moving estimate</p>
+
+    <form id="quoteForm">
+        <div class="input-group">
+            <label>Number of Rooms</label>
+            <select id="rooms">
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3" selected>3 Rooms</option>
+                <option value="4">4 Rooms</option>
+                <option value="5">5+ Rooms</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Distance (KM)</label>
+            <input type="number" id="distance" placeholder="Enter distance" min="1" value="10">
+        </div>
+
+        <div class="input-group">
+            <label>Floor Number</label>
+            <input type="number" id="floor" placeholder="Example: 3" min="0" value="2">
+        </div>
+
+        <div class="input-group">
+            <label>How Many Stairs?</label>
+            <input type="number" id="stairs" placeholder="Example: 25" min="0" value="10">
+        </div>
+
+        <div class="input-group">
+            <label>Multiple Floors?</label>
+            <select id="multipleFloors">
+                <option value="0">No</option>
+                <option value="150">Yes</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Elevator Access?</label>
+            <select id="elevator">
+                <option value="-50">Yes</option>
+                <option value="120">No</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Front Door Parking?</label>
+            <select id="parking">
+                <option value="0">Yes</option>
+                <option value="80">No</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Long Walking Distance?</label>
+            <select id="walk">
+                <option value="0">No</option>
+                <option value="100">Yes</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Your Name (Optional)</label>
+            <input type="text" id="customerName" placeholder="Your name">
+        </div>
+
+        <div class="input-group">
+            <label>Your Email (Optional)</label>
+            <input type="email" id="customerEmail" placeholder="your@email.com">
+        </div>
+
+        <button type="button" class="btn-calculate" onclick="calculateQuote()">
+            Calculate Quote
+        </button>
+        
+        <button type="button" class="btn-save" id="saveBtn" onclick="saveQuote()" style="display:none;">
+            💾 Save This Quote
+        </button>
+    </form>
+
+    <div class="result" id="result">
+        <h2>Estimated Moving Price</h2>
+        <div class="price" id="price">$0</div>
+        <div class="breakdown" id="breakdown">
+            Fill in the details above to get your estimate
+        </div>
+        <div id="quoteStatus" class="quote-status"></div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>MoveIt</h3>
+            <p>Your trusted moving partner since 2020</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="quote.html">Quote</a>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📞 (555) 123-4567</p>
+            <p>📧 info@moveit.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 MoveIt Moving Company. All rights reserved.
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/quote.js"></script>
+</body>
+</html>
